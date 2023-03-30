@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="../styles/employeeform.css">
+    <script src="../scripts/employeeform.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +27,10 @@
         </div>
         <div class="elements">
             <label for="name" class="label">Name</label>
-            <input type="text" id="name">
+            <input type="text" id="fName">
         </div>
         <div class="elements">
-            <label for="name" id="profile-images" class="label">Profile Image</label>
+            <label for="name" id="profile-img" class="label">Profile Image</label>
             <div class="space">
                 <div class="Image">
                     <input id="pic1" type="radio" name="Profile" value="../assets/Profile-Pic-1.png">
@@ -104,7 +106,7 @@
             <label for="range" id="date" class="label">Start Date </label>
             <div class="StartDate">
                 <div>
-                    <select name="Day" id="Day" class="Date">
+                    <select name="Day" id="day" class="Date">
                         <option value="" disabled selected>Day</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -140,7 +142,7 @@
                     </select>
                 </div>
                 <div>
-                    <select name="Month" id="Month" class="Date">
+                    <select name="Month" id="month" class="Date">
                         <option value="" disabled selected>Month</option>
                         <option value="Jan">January</option>
                         <option value="Feb">February</option>
@@ -158,13 +160,17 @@
                 </div>
 
                 <div>
-                    <select name="Year" id="Year" class="Date">
+                    <select name="Year" id="year" class="Date">
                         <option value="" disabled selected>Year</option>
+                        <option value="2018">2023</option>
                         <option value="2022">2022</option>
                         <option value="2021">2021</option>
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>
-                        <option value="2018">2018</option>
+                        <option value="2018">2017</option>
+                        <option value="2018">2016</option>
+                        <option value="2018">2015</option>
+                        <option value="2018">2014</option>
                     </select>
                 </div>
             </div>
@@ -174,9 +180,9 @@
             <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
         </div>
         <div class="elements">
-            <a >Cancel</a>
+            <button type="button" class="submit">Cancel</button>
             <div class="buttons">
-                <button type="button" class="submit">Submit</button>
+                <button type="button" class="submit" onclick="addEmployeeDetails()">Submit</button>
                 <button type="button" class="submit">Reset</button>
             </div>
         </div>

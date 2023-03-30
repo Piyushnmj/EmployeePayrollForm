@@ -1,100 +1,116 @@
-.header-container{
+.header-container {
     display: flex;
-    font:  normal bold 22px/25px Montserrat;
-    align-items: center; 
+    font: normal bold 22px/25px Montserrat;
+    align-items: center;
     margin-left: 150px;
-    padding: 10px; 
+    padding: 10px;
     gap: 5px;
 }
-header{
+
+header {
     background-color: #ffffff;
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
     color: #42515F;
 }
-.emp{
+
+.emp {
     color: #83d21bf1;
 }
-.form{
+
+.form {
     background-color: #ffffff;
-    width:45%;
+    width: 45%;
     margin: 80px auto;
     border-radius: 7px;
     box-shadow: 0px 3px 6px #00000029;
 }
-body{
-   background-color:#F7F7F7;
-   height:50px;
+
+body {
+    background-color: #F7F7F7;
+    height: 50px;
 }
-.title{
+
+.title {
     color: #42515F;
     padding-left: 73px;
     padding-top: 10px;
     font: normal normal bold 22px Roboto;
 }
-.elements{
+
+.elements {
     display: flex;
     padding: 10px;
-    align-items: center; 
+    align-items: center;
     margin-left: 50px;
 }
-.space{
+
+.space {
     display: flex;
     flex-wrap: wrap;
 }
-#name{
+
+#fName {
     width: 495px;
     height: 25px;
     background: #FFFFFF;
-    border: 1px solid #BDBDBD; 
+    border: 1px solid #BDBDBD;
     margin-left: 30px;
     outline: none;
 }
-.Image,.Radio,.Checkbox{
+
+.Image,
+.Radio,
+.Checkbox {
     display: flex;
     margin-left: 25px;
 }
-img
-{
+
+img {
     width: 45px;
     height: 45px;
     padding-left: 5px;
 }
-label
-{
+
+label {
     width: 20%;
     margin-left: 5px;
     color: #42515F;
     font: normal normal 18px/24px Roboto;
 }
-p{
+
+p {
     color: #42515F;
-    font: normal normal  18px/24px Roboto;
+    font: normal normal 18px/24px Roboto;
     margin-left: 5px;
 }
-option,select{
+
+option,
+select {
     color: #42515F;
     font: normal normal 18px/24px Roboto;
     outline: none;
 }
-.StartDate
-{
+
+.StartDate {
     display: flex;
     width: 20%;
     margin-left: 10px;
 }
-.Salary{
+
+.Salary {
     width: 340px;
     height: 30px;
     margin-left: 30px;
-    background: #FFFFFF ;
+    background: #FFFFFF;
     border: 1px solid #BDBDBD;
     border-radius: 3px;
 }
-.Date
-{
+
+.Date {
     width: 100px;
     height: 30px;
     background: #FFFFFF;
@@ -103,17 +119,19 @@ option,select{
     text-align: center;
     margin-left: 20px;
 }
-#notes
-{
+
+#notes {
     background: #FFFFFF;
     border: 1px solid #BDBDBD;
     width: 500px;
     margin-left: 30px;
     outline: none;
 }
-a, .submit, .reset
-{
-    font: normal  18px/22px Roboto;
+
+a,
+.submit,
+.reset {
+    font: normal 18px/22px Roboto;
     color: #42515F;
     border: 1px solid #BDBDBD;
     padding: 8px 16px;
@@ -122,15 +140,13 @@ a, .submit, .reset
     text-align: center;
     border-radius: 3px;
 }
-.buttons
-{
-    width: 605px;
+
+.buttons {
+    width: 540px;
     text-align: right;
 }
-.submit, .reset
-{
+
+.submit{
     margin: 10px;
-}
-a{
-    margin-left:15px;
+    width: 150px;
 }

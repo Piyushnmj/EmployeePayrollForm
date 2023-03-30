@@ -1,0 +1,24 @@
+{
+  "employees": [
+    {
+      "name": "Piyush Nimje",
+      "profileUrl": "../assets/Profile-Pic-4.png",
+      "gender": "Male",
+      "department": "Engineer",
+      "salary": "25000",
+      "startDate": "18 Feb 2022",
+      "notes": "Engineer",
+      "id": 1
+    },
+    {
+      "name": "Saurabh Rajankar",
+      "profileUrl": "../assets/Profile-Pic-2.png",
+      "gender": "Male",
+      "department": "Finance",
+      "salary": "30000",
+      "startDate": "15 April 2019",
+      "notes": "Manager",
+      "id": 2
+    }
+  ]
+}
