@@ -19,6 +19,36 @@
       "startDate": "15 April 2019",
       "notes": "Manager",
       "id": 2
+    },
+    {
+      "name": "Piyush",
+      "profileUrl": "../assets/Profile-Pic-2.png",
+      "gender": "Male",
+      "department": "HR",
+      "salary": "35000",
+      "startDate": "17 Jan 2022",
+      "notes": "Testing",
+      "id": 3
+    },
+    {
+      "name": "Praveen Kumar",
+      "profileUrl": "../assets/Profile-Pic-2.png",
+      "gender": "Male",
+      "department": "Engineer",
+      "salary": "40000",
+      "startDate": "15 June 2021",
+      "notes": "Front-End ",
+      "id": 4
+    },
+    {
+      "name": "Arun Ashish",
+      "profileUrl": "../assets/Profile-Pic-2.png",
+      "gender": "Male",
+      "department": "Sales",
+      "salary": "50000",
+      "startDate": "17 Feb 2021",
+      "notes": "hello",
+      "id": 5
     }
   ]
 }

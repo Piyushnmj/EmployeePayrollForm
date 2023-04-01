@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="../assets/logo.png" alt="logo">
+            <img src="../assets/logo.png" alt="logo" class="logo">
             <div class="text">
                 <span class="emp">EMPLOYEE</span>
                 <span>PAYROLL</span>
@@ -24,22 +24,26 @@
             <div class="emp-details-text">
                 Employee Details
             </div>
-            <div class="add-button">
-                <div class="plus-icon">
-                    <img src="" alt="Add user logo">
-                </div>
-                <div>Add User</div>
+            <div class="btn">
+                <button class="searchbtn">
+                    <img src="../assets/search.svg" alt="search">
+                </button>
+                <button class="addbtn">
+                    <img src="../assets/add-24px.svg" alt="add employee">
+                    Add User
+                </button>
             </div>
         </div>
         <div class="table-main">
             <table id="display" class="table">
                 <tr class="head">
-                    <th>NAME</th>
-                    <th>GENDER</th>
-                    <th>DEPARTMENT</th>
-                    <th>SALARY</th>
-                    <th>START DATE</th>
-                    <th>ACTIONS</th>
+                    <th class="profileimgcol"></th>
+                    <th class="namecol">NAME</th>
+                    <th class="gendercol">GENDER</th>
+                    <th class="deptcol">DEPARTMENT</th>
+                    <th class="salarycol">SALARY</th>
+                    <th class="datecol">START DATE</th>
+                    <th class="actionscol">ACTIONS</th>
                 </tr>
             </table>
         </div>

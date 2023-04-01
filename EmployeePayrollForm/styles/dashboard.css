@@ -1,14 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 .header-container {
     display: flex;
     font: normal bold 22px/25px Montserrat;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 170px;
     padding: 10px;
     gap: 5px;
 }
 
 header {
     background-color: #ffffff;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+    padding-left: 5px;
 }
 
 .text {
@@ -18,11 +27,124 @@ header {
 }
 
 .emp {
-    color: #83d21bf1;
+    color: #82A70C;
 }
 
-img {
-    width: 45px;
-    height: 45px;
-    padding-left: 5px;
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+    height: 800px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-main-content {
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.emp-details-text {
+    font-family: Roboto;
+    font: normal normal bold 28px/25px Roboto;
+    color: #42515f;
+    opacity: 1;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchbtn{
+    height: 40px;
+    width: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+}
+
+.addbtn{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    outline: none;
+    border: none;
+    background-color: #82A70C;
+    color: #ffffff;
+    font: 15px Roboto;
+}
+
+img{
+    width: 30px;
+}
+
+.table-main {
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    min-width: 800px;
+}
+
+th {
+    padding: 5px 8px;
+    background: #42515F 0% 0% no-repeat padding-box;
+    height: 40px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.profileimgcol{
+    width: 90px;
+}
+
+.namecol{
+    width: 450px;
+}
+
+.gendercol{
+    width: 200px;
+}
+
+.deptcol{
+    width: 250px;
+}
+
+.salarycol{
+    width: 150px;
+}
+
+.datecol{
+    width: 150px;
+}
+
+.actionscol{
+    width: 100px;
 }
