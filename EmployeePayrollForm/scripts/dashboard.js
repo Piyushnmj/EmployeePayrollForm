@@ -4,7 +4,6 @@ $(document).ready(function () {
     $.ajax({
         url: 'http://localhost:3000/employees',
         type: 'GET',
-        //dataType: 'application/json',
         success: function (data) {
             var tblbody = $(".tblbody");
             tblbody.empty();

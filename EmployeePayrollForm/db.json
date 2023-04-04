@@ -9,6 +9,16 @@
       "startDate": "15 April 2020",
       "notes": "Testing",
       "id": 1
+    },
+    {
+      "name": "Saurabh Rajankar",
+      "profileUrl": "../assets/Profile-Pic-2.png",
+      "gender": "Male",
+      "department": "Sales Finance Engineer",
+      "salary": "35000",
+      "startDate": "18 March 2019",
+      "notes": "Testing",
+      "id": 2
     }
   ]
 }

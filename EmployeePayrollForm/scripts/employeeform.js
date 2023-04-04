@@ -22,7 +22,7 @@ const addEmployeeDetails = () => {
         department += $(this).val() + " ";
     });
 
-    department = department.substring(0, department.length -2);
+    department = department.substring(0, department.length -1);
     console.log(department);
 
     const salary = $('#salary').val();
