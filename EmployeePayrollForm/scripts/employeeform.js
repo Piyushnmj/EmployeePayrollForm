@@ -9,19 +9,10 @@ const addEmployeeDetails = () => {
     const gender = $('input[name="gender"]:checked').val();
     console.log(gender);
 
-    // var department = [];
-    // $.each($('input[type="checkbox"]:checked'), function(){
-    //     department.push($(this).val());
-    // });
-
-    // // var selecteddept = department.join(' ');
-    // console.log(department);
-
     var department = "";
     $('input[type="checkbox"]:checked').each(function () {
         department += $(this).val() + " ";
     });
-
     department = department.substring(0, department.length -1);
     console.log(department);
 
@@ -49,14 +40,15 @@ const addEmployeeDetails = () => {
     $.ajax({
         url: 'http://localhost:3000/employees',
         type: 'POST',
-        dataType: 'application/json',
+        dataType: 'json',
         data: reqData,
         success: function (data, textStatus, xhr) {
             console.log(data);
-            window.location.href="/templates/dashboard.html";
         },
         error: function (xhr, textStatus, errorThrown) {
             console.log('Operation failed');
         }
     })
+
+    window.location.href="/templates/dashboard.html";
 }

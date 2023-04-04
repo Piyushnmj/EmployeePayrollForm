@@ -1,4 +1,3 @@
-//const getEmployeeDetails = () => {
 $(document).ready(function () {
 
     $.ajax({
@@ -27,7 +26,7 @@ $(document).ready(function () {
 
                 tblrow.append("<td class='salarycol'>" + value.salary + "</td>");
                 tblrow.append("<td class='datecol'>" + value.startDate + "</td>");
-                tblrow.append("<td class='actionscol action'><img src='../assets/delete-black-18dp.svg' alt='Delete' id='deletebtn' onClick='deleteEmployees(" + value.id + ")'><img src='../assets/create-black-18dp.svg' alt='Edit' id='editbtn' onClick='updateEmployeeDetails(" + value.id + ")'></td>");
+                tblrow.append("<td class='actionscol action'><img src='../assets/delete-black-18dp.svg' alt='Delete' id='deletebtn' onClick='deleteEmployees(" + value.id + ")'><img src='../assets/create-black-18dp.svg' alt='Edit' id='editbtn' onClick='editEmployeeDetails(" + value.id + ")'></td>");
 
                 tblbody.append(tblrow);
             });
@@ -53,4 +52,9 @@ const deleteEmployees = (id) => {
             alert('Unable to delete data');
         }
     });
+}
+
+const editEmployeeDetails = (id) => {
+    localStorage.setItem('employeedata', id);
+    window.location.href="/templates/updateemployeedetails.html";
 }
