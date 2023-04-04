@@ -1,24 +1,34 @@
 {
   "employees": [
     {
-      "name": "Piyush Nimje",
-      "profileUrl": "../assets/Profile-Pic-4.png",
-      "gender": "Male",
-      "department": "HR Sales Finance",
-      "salary": "35000",
-      "startDate": "15 April 2020",
-      "notes": "Testing",
-      "id": 1
-    },
-    {
       "name": "Saurabh Rajankar",
       "profileUrl": "../assets/Profile-Pic-2.png",
       "gender": "Male",
       "department": "Sales Finance Engineer",
-      "salary": "35000",
+      "salary": "₹ 35000",
       "startDate": "18 March 2019",
       "notes": "Testing",
       "id": 2
+    },
+    {
+      "name": "Praveen Kumar",
+      "profileUrl": "../assets/Profile-Pic-2.png",
+      "gender": "Male",
+      "department": "HR Sales Finance",
+      "salary": "45000",
+      "startDate": "13 June 2018",
+      "notes": "Testing",
+      "id": 3
+    },
+    {
+      "name": "Arun Ashish",
+      "profileUrl": "../assets/Profile-Pic-4.png",
+      "gender": "Male",
+      "department": "Sales Finance Engineer",
+      "salary": "50000",
+      "startDate": "18 May 2018",
+      "notes": "TEsting",
+      "id": 4
     }
   ]
 }

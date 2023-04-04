@@ -53,6 +53,7 @@ const addEmployeeDetails = () => {
         data: reqData,
         success: function (data, textStatus, xhr) {
             console.log(data);
+            window.location.href="/templates/dashboard.html";
         },
         error: function (xhr, textStatus, errorThrown) {
             console.log('Operation failed');

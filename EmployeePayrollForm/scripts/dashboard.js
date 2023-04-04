@@ -27,13 +27,30 @@ $(document).ready(function () {
 
                 tblrow.append("<td class='salarycol'>" + value.salary + "</td>");
                 tblrow.append("<td class='datecol'>" + value.startDate + "</td>");
-                tblrow.append("<td class='actionscol action'><img src='../assets/delete-black-18dp.svg' alt='Delete' id='deletebtn' onClick='Delete(" + value.id + ")'><img src='../assets/create-black-18dp.svg' alt='Edit' id='editbtn' onClick='Update(" + value.id + ")'></td>");
+                tblrow.append("<td class='actionscol action'><img src='../assets/delete-black-18dp.svg' alt='Delete' id='deletebtn' onClick='deleteEmployees(" + value.id + ")'><img src='../assets/create-black-18dp.svg' alt='Edit' id='editbtn' onClick='updateEmployeeDetails(" + value.id + ")'></td>");
 
                 tblbody.append(tblrow);
             });
         },
         error: function (xhr, textStatus, errorThrown) {
-            console.log('Operation failed');
+            alert('Operation failed');
         }
     });
 })
+
+const addEmployeeDetails = () => {
+    window.location.href="/templates/employeeform.html";
+}
+
+const deleteEmployees = (id) => {
+    $.ajax({
+        url: 'http://localhost:3000/employees/' + id,
+        type: 'DELETE',
+        success: function() {
+            tblrow.remove();
+        },
+        error: function() {
+            alert('Unable to delete data');
+        }
+    });
+}
