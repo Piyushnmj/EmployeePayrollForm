@@ -3,7 +3,7 @@
 
 .header-container {
     display: flex;
-    font: normal bold 22px/25px Montserrat;
+    font: bold 22px/25px Montserrat;
     align-items: center;
     margin-left: 170px;
     padding: 10px;
@@ -55,7 +55,7 @@ header {
 
 .emp-details-text {
     font-family: Roboto;
-    font: normal normal bold 28px/25px Roboto;
+    font: bold 28px/25px Roboto;
     color: #42515f;
     opacity: 1;
 }
@@ -116,13 +116,14 @@ th {
     background: #42515F 0% 0% no-repeat padding-box;
     height: 40px;
     text-align: left;
-    font: normal normal medium 18px/24px Roboto;
+    font: 18px/24px Roboto;
     color: #ffffff;
     opacity: 1;
 }
 
 .profileimgcol{
     width: 90px;
+    padding-left: 20px;
 }
 
 .namecol{
@@ -148,3 +149,38 @@ th {
 .actionscol{
     width: 100px;
 }
+
+.table-body{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+td{
+    padding: 5px 8px;
+    font: normal normal normal 16px/21px Roboto;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.image{
+    width: 40px;
+}
+
+.dept{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.dept-name{
+    background-color: #E9FEA5;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.action{
+    display: flex;
+    gap: 20px;
+}
+

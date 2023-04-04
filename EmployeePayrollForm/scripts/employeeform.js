@@ -9,7 +9,20 @@ const addEmployeeDetails = () => {
     const gender = $('input[name="gender"]:checked').val();
     console.log(gender);
 
-    const department = $('input[type="checkbox"]:checked').val();
+    // var department = [];
+    // $.each($('input[type="checkbox"]:checked'), function(){
+    //     department.push($(this).val());
+    // });
+
+    // // var selecteddept = department.join(' ');
+    // console.log(department);
+
+    var department = "";
+    $('input[type="checkbox"]:checked').each(function () {
+        department += $(this).val() + " ";
+    });
+
+    department = department.substring(0, department.length -2);
     console.log(department);
 
     const salary = $('#salary').val();
@@ -24,13 +37,13 @@ const addEmployeeDetails = () => {
     console.log(notes);
 
     let reqData = {
-        "name" : fullName,
-        "profileUrl" : profileImage,
-        "gender" : gender,
-        "department" : department,
-        "salary" : salary,
-        "startDate" : day + ' ' + month + ' ' + year,
-        "notes" : notes,
+        "name": fullName,
+        "profileUrl": profileImage,
+        "gender": gender,
+        "department": department,
+        "salary": salary,
+        "startDate": day + ' ' + month + ' ' + year,
+        "notes": notes,
     }
 
     $.ajax({
@@ -38,10 +51,10 @@ const addEmployeeDetails = () => {
         type: 'POST',
         dataType: 'application/json',
         data: reqData,
-        success: function(data, textStatus, xhr){
+        success: function (data, textStatus, xhr) {
             console.log(data);
         },
-        error: function(xhr, textStatus, errorThrown){
+        error: function (xhr, textStatus, errorThrown) {
             console.log('Operation failed');
         }
     })

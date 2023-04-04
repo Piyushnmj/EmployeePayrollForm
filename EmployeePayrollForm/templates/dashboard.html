@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../styles/dashboard.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="../scripts/dashboard.js"></script>
 </head>
 
 <body>
@@ -25,13 +27,15 @@
                 Employee Details
             </div>
             <div class="btn">
-                <button class="searchbtn">
-                    <img src="../assets/search.svg" alt="search">
-                </button>
-                <button class="addbtn">
-                    <img src="../assets/add-24px.svg" alt="add employee">
-                    Add User
-                </button>
+                <a href="/templates\employeeform.html">
+                    <button class="searchbtn">
+                        <img src="../assets/search.svg" alt="search">
+                    </button>
+                    <button class="addbtn">
+                        <img src="../assets/add-24px.svg" alt="add employee">
+                        Add User
+                    </button>
+                </a>
             </div>
         </div>
         <div class="table-main">
@@ -45,6 +49,29 @@
                     <th class="datecol">START DATE</th>
                     <th class="actionscol">ACTIONS</th>
                 </tr>
+                <div class="table-body">
+                    <tbody class="tblbody">
+                        <!-- <tr class="body">
+                            <td class="profileimgcol"><img class="image" src="../assets/Profile-Pic-2.png" alt="Pic1">
+                            </td>
+                            <td class="namecol">Piyush Nimje</td>
+                            <td class="gendercol">Male</td>
+                            <td class="deptcol">
+                                <div class="dept">
+                                    <span class="dept-name">Sales</span>
+                                    <span class="dept-name">HR</span>
+                                    <span class="dept-name">Finance</span>
+                                </div>
+                            </td>
+                            <td class="salarycol">₹50,000</td>
+                            <td class="datecol">02 Mar 2023</td>
+                            <td class="actionscol action">
+                                <img src="../assets/delete-black-18dp.svg" alt="Delete">
+                                <img src="../assets/create-black-18dp.svg" alt="Edit">
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </div>
             </table>
         </div>
     </div>
